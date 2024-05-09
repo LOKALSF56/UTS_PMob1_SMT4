@@ -1,6 +1,8 @@
 package id.utbandung.uts
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,10 @@ class Register : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val RegisButton: Button = findViewById(R.id.button)
+        RegisButton.setOnClickListener {
+            Toast.makeText(this@Register, "Register Berhasil", Toast.LENGTH_SHORT).show()
         }
     }
 }

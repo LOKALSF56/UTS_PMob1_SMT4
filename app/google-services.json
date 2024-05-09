@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "469654937628",
+    "project_id": "utspmob",
+    "storage_bucket": "utspmob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469654937628:android:90321858c0cecd98457fd9",
+        "android_client_info": {
+          "package_name": "id.utbandung.uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUiktBMGAl1C6dVKWazLhrdT0f32hZLYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
