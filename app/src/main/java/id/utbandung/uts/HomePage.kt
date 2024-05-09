@@ -1,32 +1,31 @@
 package id.utbandung.uts
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class HomePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_home_page)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        val loginButton: Button = findViewById(R.id.buttonLogin)
+        loginButton.setOnClickListener {
+            startActivity(Intent(this, Login::class.java))
+            finish()
         }
-        val loginbos: Button = findViewById(R.id.buttonLogin)
-        loginbos.setOnClickListener {
-            Intent(this, Login::class.java).also {
-                startActivity(it)
-                finish()
-            }
-        }
+        val listView: ListView = findViewById(R.id.listdata)
+
+        val beritaString: String = getString(R.string.Beritaedan)
+
+        val beritaArray = beritaString.split("\n").toTypedArray()
+
+        val adapter = adapter(this, android.R.layout.simple_list_item_1, beritaArray)
+
+        listView.adapter = adapter
     }
 }
