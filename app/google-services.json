@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "469654937628",
-    "project_id": "utspmob",
-    "storage_bucket": "utspmob.appspot.com"
+    "project_number": "318830571464",
+    "project_id": "uaspmobile-770bf",
+    "storage_bucket": "uaspmobile-770bf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:469654937628:android:90321858c0cecd98457fd9",
+        "mobilesdk_app_id": "1:318830571464:android:abcadfe2f29ef588129afd",
         "android_client_info": {
           "package_name": "id.utbandung.uts"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCUiktBMGAl1C6dVKWazLhrdT0f32hZLYs"
+          "current_key": "AIzaSyDP_EeAWp-6x8_CbuM5hK2e924_Kf64ov8"
         }
       ],
       "services": {
